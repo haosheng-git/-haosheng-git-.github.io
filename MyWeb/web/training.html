@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精准训练体系 - 高水平跑者指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; color: #333; line-height: 1.8; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        /* 导航栏 */
+        .nav { background: #2d3436; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu a { color: #fff; text-decoration: none; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-menu a:hover, .nav-menu a.active { border-color: #e74c3c; }
+        /* 页面内容 */
+        .page-content { padding: 60px 0; }
+        .page-header { margin-bottom: 60px; text-align: center; }
+        .page-header h2 { font-size: 36px; color: #2d3436; margin-bottom: 20px; }
+        .page-header p { color: #636e72; font-size: 18px; max-width: 1000px; margin: 0 auto; }
+        /* 训练子模块（跳转5、6、7页） */
+        .training-modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+        .training-card { background: #f8f9fa; border-radius: 10px; padding: 35px; border-left: 5px solid #e74c3c; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .training-card:hover { transform: translateY(-8px); }
+        .training-card h3 { font-size: 24px; color: #2d3436; margin-bottom: 15px; display: flex; align-items: center; }
+        .training-card h3 i { margin-right: 10px; color: #e74c3c; font-size: 28px; }
+        .training-card p { color: #636e72; margin-bottom: 25px; }
+        .training-link { display: inline-block; color: #e74c3c; text-decoration: none; font-weight: 500; border: 1px solid #e74c3c; padding: 8px 20px; border-radius: 30px; transition: 0.3s; }
+        .training-link:hover { background: #e74c3c; color: #fff; }
+        /* 核心原则 */
+        .core-principles { background: #fff; border-radius: 10px; padding: 40px; margin-top: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .core-principles h3 { font-size: 26px; color: #2d3436; margin-bottom: 25px; text-align: center; }
+        .principles-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .principle-item { flex: 1; min-width: 200px; text-align: center; padding: 20px; background: #f8f9fa; border-radius: 8px; }
+        .principle-item span { display: block; font-size: 36px; font-weight: bold; color: #e74c3c; margin-bottom: 10px; }
+        /* 底部 */
+        .footer { background: #2d3436; color: #fff; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .footer a { color: #e74c3c; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; }
+            .nav-menu { margin-top: 15px; }
+            .nav-menu li { margin: 0 10px; }
+            .page-header h2 { font-size: 28px; }
+            .core-principles { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">高水平跑者指南</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">主页面</a></li>
+                <li><a href="training.html" class="active">精准训练体系</a></li>
+                <li><a href="guarantee.html">关键保障</a></li>
+                <li><a href="progress.html">长期进阶逻辑</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <section class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>精准训练体系</h2>
+                <p>高水平跑者的训练不是简单的跑量叠加，而是围绕核心能力的系统化、精准化训练。以下三大子模块构成了完整的训练体系，缺一不可。</p>
+            </div>
+
+            <!-- 跳转至5、6、7页 -->
+            <div class="training-modules">
+                <!-- 跳转至5.耐力页面 -->
+                <div class="training-card">
+                    <h3><i>🏃</i>耐力训练</h3>
+                    <p>耐力是跑步的基础，决定了长距离跑步的稳定性和续航能力。掌握LSD、马拉松配速跑等训练方法，科学提升有氧基础。</p>
+                    <a href="endurance.html" class="training-link">学习耐力训练 →</a>
+                </div>
+                <!-- 跳转至6.强度页面 -->
+                <div class="training-card">
+                    <h3><i>⚡</i>强度训练</h3>
+                    <p>强度训练是突破速度瓶颈的关键，通过间歇跑、乳酸阈跑等方式，提升无氧代谢能力和跑步效率，实现配速质的飞跃。</p>
+                    <a href="intensity.html" class="training-link">学习强度训练 →</a>
+                </div>
+                <!-- 跳转至7.力量和技术页面 -->
+                <div class="training-card">
+                    <h3><i>💪</i>力量与技术</h3>
+                    <p>强大的核心力量和规范的跑步技术是避免损伤、提升跑步经济性的核心。包含下肢力量、核心稳定性训练及跑姿优化技巧。</p>
+                    <a href="strength.html" class="training-link">学习力量与技术 →</a>
+                </div>
+            </div>
+
+            <!-- 核心原则 -->
+            <div class="core-principles">
+                <h3>精准训练核心原则</h3>
+                <div class="principles-list">
+                    <div class="principle-item">
+                        <span>80/20</span>
+                        <p>80%低强度+20%高强度，避免过度训练</p>
+                    </div>
+                    <div class="principle-item">
+                        <span>循序渐进</span>
+                        <p>每周跑量增幅不超过10%，给身体适应时间</p>
+                    </div>
+                    <div class="principle-item">
+                        <span>专项匹配</span>
+                        <p>训练内容与目标赛事（5K/半马/全马）匹配</p>
+                    </div>
+                    <div class="principle-item">
+                        <span>劳逸结合</span>
+                        <p>训练后及时恢复，避免连续高强度训练</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 高水平跑者指南 | <a href="../index.html">返回主页面</a> | <a href="training.html">返回精准训练体系</a></p>
+        </div>
+    </footer>
+</body>
+</html>

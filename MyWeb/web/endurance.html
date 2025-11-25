@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>耐力训练 - 高水平跑者指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; color: #333; line-height: 1.8; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        /* 导航栏 */
+        .nav { background: #2d3436; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu a { color: #fff; text-decoration: none; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-menu a:hover, .nav-menu a.active { border-color: #e74c3c; }
+        /* 页面内容 */
+        .page-content { padding: 60px 0; }
+        .page-header { margin-bottom: 60px; text-align: center; }
+        .page-header h2 { font-size: 36px; color: #2d3436; margin-bottom: 20px; }
+        .page-header p { color: #636e72; font-size: 18px; max-width: 1000px; margin: 0 auto; }
+        /* 训练方法 */
+        .training-methods { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 50px; }
+        .method-item { margin-bottom: 40px; padding: 30px; background: #f8f9fa; border-radius: 8px; }
+        .method-item h3 { font-size: 24px; color: #e74c3c; margin-bottom: 15px; }
+        .method-meta { color: #95a5a6; font-size: 14px; margin-bottom: 15px; }
+        .method-content { color: #636e72; margin-bottom: 20px; }
+        .method-tips { background: #fff; padding: 15px; border-left: 3px solid #e74c3c; border-radius: 4px; color: #636e72; }
+        /* 训练计划示例 */
+        .training-plan { background: #f8f9fa; border-radius: 10px; padding: 40px; }
+        .training-plan h3 { font-size: 26px; color: #2d3436; margin-bottom: 30px; text-align: center; }
+        .plan-table { width: 100%; border-collapse: collapse; }
+        .plan-table th, .plan-table td { padding: 15px; text-align: center; border-bottom: 1px solid #ddd; }
+        .plan-table th { background: #e74c3c; color: #fff; }
+        .plan-table tr:hover { background: #fff; }
+        /* 底部 */
+        .footer { background: #2d3436; color: #fff; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .footer a { color: #e74c3c; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; }
+            .nav-menu { margin-top: 15px; }
+            .nav-menu li { margin: 0 10px; }
+            .page-header h2 { font-size: 28px; }
+            .training-methods, .training-plan { padding: 30px 20px; }
+            .method-item { padding: 20px; }
+            .plan-table th, .plan-table td { padding: 10px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">高水平跑者指南</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">主页面</a></li>
+                <li><a href="training.html" class="active">精准训练体系</a></li>
+                <li><a href="guarantee.html">关键保障</a></li>
+                <li><a href="progress.html">长期进阶逻辑</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <section class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>耐力训练：跑步的基础能力</h2>
+                <p>耐力是所有跑步项目的核心基础，无论是5公里还是马拉松，强大的耐力能让你在长距离中保持稳定配速，减少疲劳感。以下是科学的耐力训练方法和计划。</p>
+            </div>
+
+            <!-- 训练方法 -->
+            <div class="training-methods">
+                <div class="method-item">
+                    <h3>1. 长距离慢跑（LSD）</h3>
+                    <div class="method-meta">强度：低（心率60-70%最大心率） | 时长：60-150分钟 | 频率：每周1次</div>
+                    <div class="method-content">
+                        <p>长距离慢跑是提升基础耐力的核心方法，重点在于“慢”，以能完整对话的配速进行。通过长时间低强度运动，提升心肌功能、毛细血管密度和脂肪代谢能力，为长距离跑步打下基础。</p>
+                    </div>
+                    <div class="method-tips">
+                        <strong>训练小贴士：</strong> 跑前做好动态热身（5-10分钟），跑中每30分钟补充150-200ml水，跑后及时拉伸；每周LSD时长增幅不超过10%，避免过度疲劳。
+                    </div>
+                </div>
+
+                <div class="method-item">
+                    <h3>2. 马拉松配速跑（MP）</h3>
+                    <div class="method-meta">强度：中等（心率75-80%最大心率） | 时长：40-90分钟 | 频率：每2周1次</div>
+                    <div class="method-content">
+                        <p>以目标马拉松配速进行训练，让身体适应比赛节奏，提升在该配速下的跑步经济性。适合有明确马拉松目标的跑者，通常在基础期后期开始加入。</p>
+                    </div>
+                    <div class="method-tips">
+                        <strong>训练小贴士：</strong> 训练前先进行20分钟热身慢跑，再进入配速跑阶段；配速误差控制在±10秒/公里，避免忽快忽慢；跑后进行10分钟放松慢跑，帮助身体恢复。
+                    </div>
+                </div>
+
+                <div class="method-item">
+                    <h3>3. 节奏跑（T配速跑）</h3>
+                    <div class="method-meta">强度：中高（心率80-85%最大心率） | 时长：20-40分钟 | 频率：每周1次</div>
+                    <div class="method-content">
+                        <p>节奏跑是介于有氧和无氧之间的训练，以“有点吃力但能坚持”的配速进行。通过该训练提升乳酸阈，让身体在较高配速下能有效清除乳酸，延缓疲劳出现的时间。</p>
+                    </div>
+                    <div class="method-tips">
+                        <strong>训练小贴士：</strong> 热身15分钟后进入节奏跑阶段，保持配速稳定；初学者可从20分钟开始，逐步增加到40分钟；节奏跑后避免当天进行其他高强度训练。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 训练计划示例 -->
+            <div class="training-plan">
+                <h3>基础耐力提升4周训练计划（每周跑4-5次）</h3>
+                <table class="plan-table">
+                    <thead>
+                        <tr>
+                            <th>星期</th>
+                            <th>训练内容</th>
+                            <th>强度</th>
+                            <th>时长/距离</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>周一</td>
+                            <td>轻松跑</td>
+                            <td>低</td>
+                            <td>40-50分钟</td>
+                        </tr>
+                        <tr>
+                            <td>周二</td>
+                            <td>节奏跑（20分钟）+ 热身/放松各15分钟</td>
+                            <td>中高</td>
+                            <td>50分钟</td>
+                        </tr>
+                        <tr>
+                            <td>周三</td>
+                            <td>休息或交叉训练（骑行/游泳）</td>
+                            <td>-</td>
+                            <td>30-40分钟</td>
+                        </tr>
+                        <tr>
+                            <td>周四</td>
+                            <td>轻松跑</td>
+                            <td>低</td>
+                            <td>50-60分钟</td>
+                        </tr>
+                        <tr>
+                            <td>周五</td>
+                            <td>休息</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>周六</td>
+                            <td>长距离慢跑（LSD）</td>
+                            <td>低</td>
+                            <td>80-100分钟</td>
+                        </tr>
+                        <tr>
+                            <td>周日</td>
+                            <td>放松跑</td>
+                            <td>低</td>
+                            <td>30-40分钟</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 高水平跑者指南 | <a href="../index.html">返回主页面</a> | <a href="training.html">返回精准训练体系</a> | <a href="endurance.html">返回耐力训练</a></p>
+        </div>
+    </footer>
+</body>
+</html>

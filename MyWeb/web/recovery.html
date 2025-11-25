@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恢复优先 - 高水平跑者指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; color: #333; line-height: 1.8; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        /* 导航栏 */
+        .nav { background: #2d3436; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu a { color: #fff; text-decoration: none; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-menu a:hover, .nav-menu a.active { border-color: #3498db; }
+        /* 页面内容 */
+        .page-content { padding: 60px 0; }
+        .page-header { margin-bottom: 60px; text-align: center; }
+        .page-header h2 { font-size: 36px; color: #2d3436; margin-bottom: 20px; }
+        .page-header p { color: #636e72; font-size: 18px; max-width: 1000px; margin: 0 auto; }
+        /* 恢复方法 */
+        .recovery-methods { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 60px; }
+        .recovery-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .recovery-card:hover { transform: translateY(-8px); }
+        .recovery-img { height: 180px; overflow: hidden; }
+        .recovery-img img { width: 100%; height: 100%; object-fit: cover; }
+        .recovery-content { padding: 30px; }
+        .recovery-content h3 { font-size: 24px; color: #3498db; margin-bottom: 15px; }
+        .recovery-content p { color: #636e72; margin-bottom: 20px; }
+        .recovery-list { margin-left: 20px; color: #636e72; }
+        .recovery-list li { margin-bottom: 10px; }
+        /* 恢复周期表 */
+        .recovery-cycle { background: #f8f9fa; border-radius: 10px; padding: 40px; }
+        .recovery-cycle h3 { font-size: 26px; color: #2d3436; margin-bottom: 30px; text-align: center; }
+        .cycle-table { width: 100%; border-collapse: collapse; min-width: 700px; }
+        .cycle-table th, .cycle-table td { padding: 15px; text-align: center; border-bottom: 1px solid #ddd; }
+        .cycle-table th { background: #3498db; color: #fff; }
+        .cycle-table tr:hover { background: #fff; }
+        /* 底部 */
+        .footer { background: #2d3436; color: #fff; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .footer a { color: #3498db; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; }
+            .nav-menu { margin-top: 15px; }
+            .nav-menu li { margin: 0 10px; }
+            .page-header h2 { font-size: 28px; }
+            .recovery-card { padding: 20px; }
+            .recovery-cycle { padding: 30px 20px; }
+            .cycle-table th, .cycle-table td { padding: 10px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">高水平跑者指南</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">主页面</a></li>
+                <li><a href="training.html">精准训练体系</a></li>
+                <li><a href="guarantee.html" class="active">关键保障</a></li>
+                <li><a href="progress.html">长期进阶逻辑</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <section class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>恢复优先：跑步能力提升的核心</h2>
+                <p>跑步是“破坏”身体的过程，恢复才是“重建”并变强的过程。高水平跑者都懂得“训练后恢复”的重要性，合理的恢复能让身体超量恢复，避免过度训练。</p>
+            </div>
+
+            <!-- 恢复方法 -->
+            <div class="recovery-methods">
+                <!-- 恢复1：睡眠恢复 -->
+                <div class="recovery-card">
+<div class="recovery-content">
+          <h3>1. 睡眠恢复（最核心的恢复方式）</h3>
+                        <p>睡眠时身体会分泌生长激素，修复受损的肌肉纤维，提升心肺功能。跑者的睡眠质量直接决定训练效果。</p>
+                        <ul class="recovery-list">
+                            <li>每天保证7-9小时睡眠，高强度训练后可增加1-2小时</li>
+                            <li>睡前1小时远离电子屏幕，避免蓝光影响睡眠</li>
+                            <li>保持规律作息，固定入睡和起床时间</li>
+                            <li>睡眠环境保持安静、黑暗、凉爽（18-22℃）</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 恢复2：主动恢复 -->
+                <div class="recovery-card">
+<div class="recovery-content">
+          <h3>2. 主动恢复训练</h3>
+                        <p>高强度训练后1-2天，进行低强度运动促进血液循环，帮助身体排出代谢废物，加速恢复。</p>
+                        <ul class="recovery-list">
+                            <li>形式：慢走、慢跑、骑行、游泳（心率60-70%最大心率）</li>
+                            <li>时长：30-60分钟，以身体放松为准</li>
+                            <li>频率：每周1-2次，穿插在高强度训练之间</li>
+                            <li>注意：主动恢复不是“加练”，强度务必控制在低水平</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 恢复3：拉伸与按摩 -->
+                <div class="recovery-card">
+<div class="recovery-content">
+          <h3>3. 拉伸与按摩放松</h3>
+                        <p>跑步后肌肉处于紧张状态，及时拉伸和按摩能缓解肌肉酸痛，预防肌肉僵硬和运动损伤。</p>
+                        <ul class="recovery-list">
+                            <li>静态拉伸：每次跑步后进行10-15分钟，重点拉伸小腿、大腿、臀部、髂腰肌</li>
+                            <li>泡沫轴按摩：每周2-3次，每次15分钟，放松深层肌肉（大腿前侧、后侧、臀部）</li>
+                            <li>专业按摩：每月1-2次，针对紧张部位进行深度放松</li>
+                            <li>拉伸原则：轻柔缓慢，每个动作保持30秒，避免暴力拉伸</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 恢复4：冷热交替疗法 -->
+                <div class="recovery-card">
+<div class="recovery-content">
+          <h3>4. 冷热交替疗法</h3>
+                        <p>通过冷热交替刺激血管收缩和扩张，促进血液循环，缓解肌肉炎症和酸痛。</p>
+                        <ul class="recovery-list">
+                            <li>方法：冷水浴（10-15℃）1分钟 + 热水浴（38-40℃）2分钟，重复3-4次</li>
+                            <li>适用场景：高强度训练后、长距离跑步后</li>
+                            <li>注意：有心血管疾病、高血压的跑者慎用</li>
+                            <li>简化版：用冷毛巾敷小腿、大腿10分钟，再用热毛巾敷10分钟</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 恢复周期表 -->
+            <div class="recovery-cycle">
+                <h3>不同训练强度的恢复周期参考</h3>
+                <div class="table-responsive">
+                    <table class="cycle-table">
+                        <thead>
+                            <tr>
+                                <th>训练类型</th>
+                                <th>强度</th>
+                                <th>建议恢复时间</th>
+                                <th>恢复重点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>轻松跑（40-60分钟）</td>
+                                <td>低</td>
+                                <td>12-24小时</td>
+                                <td>简单拉伸，补充水分和碳水</td>
+                            </tr>
+                            <tr>
+                                <td>节奏跑/乳酸阈跑</td>
+                                <td>中高</td>
+                                <td>48小时</td>
+                                <td>睡眠恢复，主动拉伸，补充蛋白质</td>
+                            </tr>
+                            <tr>
+                                <td>间歇跑/爬坡跑</td>
+                                <td>高</td>
+                                <td>72小时</td>
+                                <td>充足睡眠，泡沫轴按摩，低强度主动恢复</td>
+                            </tr>
+                            <tr>
+                                <td>长距离慢跑（120分钟以上）</td>
+                                <td>中低</td>
+                                <td>48-72小时</td>
+                                <td>营养补充，睡眠恢复，避免高强度运动</td>
+                            </tr>
+                            <tr>
+                                <td>马拉松/半程马拉松比赛</td>
+                                <td>极高</td>
+                                <td>7-14天</td>
+                                <td>前3天完全休息，之后逐步恢复低强度跑步</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 高水平跑者指南 | <a href="../index.html">返回主页面</a> | <a href="guarantee.html">返回关键保障</a> | <a href="recovery.html">返回恢复优先</a></p>
+        </div>
+    </footer>
+</body>
+</html>

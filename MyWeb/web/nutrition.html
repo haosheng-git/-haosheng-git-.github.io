@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>营养供给 - 高水平跑者指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; color: #333; line-height: 1.8; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        /* 导航栏 */
+        .nav { background: #2d3436; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu a { color: #fff; text-decoration: none; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-menu a:hover, .nav-menu a.active { border-color: #3498db; }
+        /* 页面内容 */
+        .page-content { padding: 60px 0; }
+        .page-header { margin-bottom: 60px; text-align: center; }
+        .page-header h2 { font-size: 36px; color: #2d3436; margin-bottom: 20px; }
+        .page-header p { color: #636e72; font-size: 18px; max-width: 1000px; margin: 0 auto; }
+        /* 营养核心 */
+        .nutrition-core { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 60px; }
+        .nutrition-header { text-align: center; margin-bottom: 40px; }
+        .nutrition-header h3 { font-size: 28px; color: #3498db; margin-bottom: 15px; }
+        .nutrition-header p { color: #636e72; }
+        .nutrition-macros { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .macro-item { background: #f8f9fa; padding: 30px; border-radius: 8px; text-align: center; }
+        .macro-icon { font-size: 48px; color: #3498db; margin-bottom: 20px; }
+        .macro-item h4 { font-size: 22px; color: #2d3436; margin-bottom: 15px; }
+        .macro-item p { color: #636e72; margin-bottom: 15px; }
+        .macro-desc { color: #636e72; font-size: 14px; }
+        /* 训练期营养 */
+        .training-nutrition { background: #f8f9fa; border-radius: 10px; padding: 40px; }
+        .training-nutrition h3 { font-size: 26px; color: #2d3436; margin-bottom: 30px; text-align: center; }
+        .nutrition-timeline { max-width: 800px; margin: 0 auto; }
+        .timeline-item { margin-bottom: 40px; position: relative; padding-left: 40px; }
+        .timeline-item::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: #3498db; }
+        .timeline-item::after { content: ""; position: absolute; left: 3px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background: #3498db; }
+        .timeline-item h4 { font-size: 20px; color: #3498db; margin-bottom: 15px; }
+        .timeline-content { color: #636e72; }
+        .timeline-content p { margin-bottom: 10px; }
+        /* 底部 */
+        .footer { background: #2d3436; color: #fff; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .footer a { color: #3498db; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; }
+            .nav-menu { margin-top: 15px; }
+            .nav-menu li { margin: 0 10px; }
+            .page-header h2 { font-size: 28px; }
+            .nutrition-core, .training-nutrition { padding: 30px 20px; }
+            .macro-item, .timeline-item { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">高水平跑者指南</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">主页面</a></li>
+                <li><a href="training.html">精准训练体系</a></li>
+                <li><a href="guarantee.html" class="active">关键保障</a></li>
+                <li><a href="progress.html">长期进阶逻辑</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <section class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>科学营养供给：跑步的能量源泉</h2>
+                <p>跑步消耗的能量需要精准补充，蛋白质、碳水、脂肪的合理搭配，以及训练前后的营养时机，直接影响训练效果、恢复速度和运动表现。</p>
+            </div>
+
+            <!-- 营养核心：三大营养素 -->
+            <div class="nutrition-core">
+                <div class="nutrition-header">
+                    <h3>跑者三大营养素配比（按每日总热量计算）</h3>
+                    <p>根据训练强度调整比例，高强度训练期增加碳水占比，恢复期增加蛋白质占比</p>
+                </div>
+                <div class="nutrition-macros">
+                    <!-- 碳水化合物 -->
+                    <div class="macro-item">
+                        <div class="macro-icon">🍞</div>
+                        <h4>碳水化合物（55-65%）</h4>
+                        <p>跑者的主要能量来源，尤其是中高强度跑步时</p>
+                        <div class="macro-desc">
+                            每日摄入量：5-8g/kg体重（高强度训练期可增至7-10g/kg）<br>
+                            优质来源：全谷物、薯类、水果、豆类、运动饮料
+                        </div>
+                    </div>
+                    <!-- 蛋白质 -->
+                    <div class="macro-item">
+                        <div class="macro-icon">🥚</div>
+                        <h4>蛋白质（15-20%）</h4>
+                        <p>修复肌肉损伤，促进肌肉生长，提升免疫力</p>
+                        <div class="macro-desc">
+                            每日摄入量：1.6-2.2g/kg体重（高强度训练后需及时补充）<br>
+                            优质来源：鸡胸肉、鱼虾、鸡蛋、牛奶、豆制品、蛋白粉
+                        </div>
+                    </div>
+                    <!-- 脂肪 -->
+                    <div class="macro-item">
+                        <div class="macro-icon">🥑</div>
+                        <h4>健康脂肪（20-25%）</h4>
+                        <p>提供持久能量，帮助吸收维生素，保护关节</p>
+                        <div class="macro-desc">
+                            每日摄入量：0.8-1.2g/kg体重<br>
+                            优质来源：牛油果、坚果、橄榄油、深海鱼、亚麻籽
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 训练期营养时机 -->
+            <div class="training-nutrition">
+                <h3>训练期营养补充时间线</h3>
+                <div class="nutrition-timeline">
+                    <!-- 训练前 -->
+                    <div class="timeline-item">
+                        <h4>1. 训练前1-2小时（正餐）</h4>
+                        <div class="timeline-content">
+                            <p>以碳水化合物为主，搭配少量蛋白质，避免高脂肪食物</p>
+                            <p>示例：全麦面包2片 + 鸡胸肉100g + 香蕉1根；或燕麦粥 + 鸡蛋1个 + 牛奶200ml</p>
+                            <p>目的：补充糖原，提供训练时的能量，避免训练中低血糖</p>
+                        </div>
+                    </div>
+                    <!-- 训练前30分钟 -->
+                    <div class="timeline-item">
+                        <h4>2. 训练前30分钟（加餐）</h4>
+                        <div class="timeline-content">
+                            <p>快速吸收的碳水化合物，避免空腹训练</p>
+                            <p>示例：香蕉1根、能量胶1个、葡萄干50g</p>
+                            <p>目的：快速提升血糖，为训练初期提供能量</p>
+                        </div>
+                    </div>
+                    <!-- 训练中 -->
+                    <div class="timeline-item">
+                        <h4>3. 训练中（持续60分钟以上）</h4>
+                        <div class="timeline-content">
+                            <p>补充水分和电解质，长距离跑步需补充碳水</p>
+                            <p>水分：每15-20分钟补充150-200ml水（高温环境可增加）</p>
+                            <p>电解质：跑步超过60分钟，补充含钠、钾的运动饮料或盐丸</p>
+                            <p>碳水：跑步超过90分钟，每30-45分钟补充30-45g碳水（能量胶、运动饮料）</p>
+                        </div>
+                    </div>
+                    <!-- 训练后 -->
+                    <div class="timeline-item">
+                        <h4>4. 训练后30分钟内（黄金恢复期）</h4>
+                        <div class="timeline-content">
+                            <p>快速补充碳水+蛋白质，促进糖原合成和肌肉修复</p>
+                            <p>配比：碳水:蛋白质 = 3:1 或 4:1</p>
+                            <p>示例：牛奶250ml + 香蕉1根；或蛋白粉1勺 + 燕麦片50g；或鸡胸肉沙拉 + 红薯100g</p>
+                            <p>目的：最大化超量恢复效果，缩短恢复时间</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 高水平跑者指南 | <a href="../index.html">返回主页面</a> | <a href="guarantee.html">返回关键保障</a> | <a href="nutrition.html">返回营养供给</a></p>
+        </div>
+    </footer>
+</body>
+</html>

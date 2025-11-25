@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何成为一名高水平跑者 - 主页面</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; color: #333; line-height: 1.8; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        /* 导航栏 */
+        .nav { background: #2d3436; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu a { color: #fff; text-decoration: none; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-menu a:hover, .nav-menu a.active { border-color: #e74c3c; }
+        /* Banner区 */
+        .banner { height: 500px; background: url("image/banner-run.jpg") no-repeat center; background-size: cover; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+        .banner-mask { background: rgba(0,0,0,0.6); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+        .banner-text h1 { font-size: 48px; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+        .banner-text p { font-size: 20px; max-width: 800px; margin: 0 auto; text-shadow: 0 1px 5px rgba(0,0,0,0.8); }
+        /* 核心板块（跳转2、3、4页） */
+        .core-modules { padding: 80px 0; background: #f8f9fa; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 32px; color: #2d3436; margin-bottom: 15px; }
+        .section-title p { color: #636e72; font-size: 18px; }
+        .modules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .module-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .module-card:hover { transform: translateY(-10px); }
+        .module-img { height: 200px; overflow: hidden; }
+        .module-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .module-card:hover .module-img img { transform: scale(1.08); }
+        .module-content { padding: 30px; }
+        .module-content h3 { font-size: 22px; color: #2d3436; margin-bottom: 15px; }
+        .module-content p { color: #636e72; margin-bottom: 25px; }
+        .module-link { display: inline-block; background: #e74c3c; color: #fff; padding: 10px 25px; border-radius: 30px; text-decoration: none; transition: background 0.3s; }
+        .module-link:hover { background: #c0392b; }
+        /* 底部 */
+        .footer { background: #2d3436; color: #fff; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .footer p { margin-bottom: 15px; }
+        .footer a { color: #e74c3c; text-decoration: none; }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; }
+            .nav-menu { margin-top: 15px; }
+            .nav-menu li { margin: 0 10px; }
+            .banner { height: 350px; }
+            .banner-text h1 { font-size: 36px; }
+            .banner-text p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">高水平跑者指南</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">主页面</a></li>
+                <li><a href="web/training.html">精准训练体系</a></li>
+                <li><a href="web/guarantee.html">关键保障</a></li>
+                <li><a href="web/progress.html">长期进阶逻辑</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner区 -->
+    <div class="banner">
+        <div class="banner-mask">
+            <div class="banner-text">
+                <h1>如何成为一名高水平跑者</h1>
+                <p>科学训练、精准保障、长期坚持，从入门到精英的完整指南</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 核心板块（跳转2、3、4页） -->
+    <section class="core-modules">
+        <div class="container">
+            <div class="section-title">
+                <h2>三大核心支柱</h2>
+                <p>高水平跑者的成长离不开科学的训练、全面的保障和清晰的进阶逻辑</p>
+            </div>
+            <div class="modules-grid">
+                <!-- 跳转至2.精准训练体系页面 -->
+                <div class="module-card">
+                    <div class="module-img">
+                        <img src="image/training.jpg" alt="精准训练体系">
+                    </div>
+                    <div class="module-content">
+                        <h3>精准训练体系</h3>
+                        <p>围绕耐力、强度、力量与技术三大核心，构建系统化训练方案，拒绝盲目跑量堆积</p>
+                        <a href="web/training.html" class="module-link">进入学习 →</a>
+                    </div>
+                </div>
+                <!-- 跳转至3.关键保障页面 -->
+                <div class="module-card">
+                    <div class="module-img">
+                        <img src="image/guarantee.jpg" alt="关键保障">
+                    </div>
+                    <div class="module-content">
+                        <h3>关键保障体系</h3>
+                        <p>以恢复为核心，配合科学营养供给与数据监控，为训练效果保驾护航，预防运动损伤</p>
+                        <a href="web/guarantee.html" class="module-link">进入学习 →</a>
+                    </div>
+                </div>
+                <!-- 跳转至4.长期进阶逻辑页面 -->
+                <div class="module-card">
+                    <div class="module-img">
+                        <img src="image/progress.jpg" alt="长期进阶逻辑">
+                    </div>
+                    <div class="module-content">
+                        <h3>长期进阶逻辑</h3>
+                        <p>掌握周期化训练、强度控制、瓶颈突破技巧，实现可持续的能力提升，避免平台期</p>
+                        <a href="web/progress.html" class="module-link">进入学习 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 高水平跑者指南 | 科学跑步，成就更好的自己</p>
+            <p><a href="index.html">返回主页面</a></p>
+        </div>
+    </footer>
+</body>
+</html>

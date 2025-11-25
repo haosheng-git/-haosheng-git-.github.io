@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>力量和技术训练 - 高水平跑者指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", sans-serif; color: #333; line-height: 1.8; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        /* 导航栏 */
+        .nav { background: #2d3436; padding: 15px 0; position: sticky; top: 0; z-index: 999; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 30px; }
+        .nav-menu a { color: #fff; text-decoration: none; padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-menu a:hover, .nav-menu a.active { border-color: #e74c3c; }
+        /* 页面内容 */
+        .page-content { padding: 60px 0; }
+        .page-header { margin-bottom: 60px; text-align: center; }
+        .page-header h2 { font-size: 36px; color: #2d3436; margin-bottom: 20px; }
+        .page-header p { color: #636e72; font-size: 18px; max-width: 1000px; margin: 0 auto; }
+        /* 力量训练 */
+        .strength-training { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 60px; }
+        .strength-header { text-align: center; margin-bottom: 40px; }
+        .strength-header h3 { font-size: 28px; color: #e74c3c; margin-bottom: 15px; }
+        .strength-header p { color: #636e72; }
+        .strength-exercises { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .exercise-item { background: #f8f9fa; padding: 25px; border-radius: 8px; }
+        .exercise-item h4 { font-size: 20px; color: #2d3436; margin-bottom: 10px; }
+        .exercise-meta { color: #95a5a6; font-size: 14px; margin-bottom: 15px; }
+        .exercise-content { color: #636e72; margin-bottom: 15px; }
+        .exercise-steps { color: #636e72; font-size: 14px; margin-left: 20px; }
+        /* 技术训练 */
+        .tech-training { background: #f8f9fa; border-radius: 10px; padding: 40px; }
+        .tech-header { text-align: center; margin-bottom: 40px; }
+        .tech-header h3 { font-size: 28px; color: #2d3436; margin-bottom: 15px; }
+        .tech-header p { color: #636e72; }
+        .tech-modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .tech-card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+        .tech-card h4 { font-size: 20px; color: #e74c3c; margin-bottom: 15px; }
+        .tech-content { color: #636e72; margin-bottom: 20px; }
+        .tech-tips { background: #f8f9fa; padding: 15px; border-radius: 4px; color: #636e72; font-size: 14px; }
+        /* 底部 */
+        .footer { background: #2d3436; color: #fff; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .footer a { color: #e74c3c; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-content { flex-direction: column; }
+            .nav-menu { margin-top: 15px; }
+            .nav-menu li { margin: 0 10px; }
+            .page-header h2 { font-size: 28px; }
+            .strength-training, .tech-training { padding: 30px 20px; }
+            .exercise-item, .tech-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">高水平跑者指南</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">主页面</a></li>
+                <li><a href="training.html" class="active">精准训练体系</a></li>
+                <li><a href="guarantee.html">关键保障</a></li>
+                <li><a href="progress.html">长期进阶逻辑</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <section class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>力量和技术训练：高效跑步的核心</h2>
+                <p>强大的力量能提升跑步推进力，规范的技术能减少能量浪费。两者结合能显著提升跑步经济性，避免运动损伤，是高水平跑者的必备能力。</p>
+            </div>
+
+            <!-- 力量训练部分 -->
+            <div class="strength-training">
+                <div class="strength-header">
+                    <h3>核心力量训练（每周2-3次，与跑步间隔12小时以上）</h3>
+                    <p>跑步力量训练以“功能性、爆发力”为主，重点锻炼下肢、核心和臀部肌肉，提升跑步时的稳定性和推进力</p>
+                </div>
+                <div class="strength-exercises">
+                    <!-- 力量训练1 -->
+                    <div class="exercise-item">
+                        <h4>1. 深蹲（徒手/负重）</h4>
+                        <div class="exercise-meta">组数：3组 | 次数：12-15次/组 | 休息：60秒/组</div>
+                        <div class="exercise-content">锻炼大腿前侧、臀部和核心，提升跑步时的蹬地力量</div>
+                        <ol class="exercise-steps">
+                            <li>双脚与肩同宽，脚尖略微外展，双手自然放在胸前或举过头顶</li>
+                            <li>缓慢下蹲，臀部向后下方坐，膝盖不超过脚尖，大腿与地面平行</li>
+                            <li>停留1秒后，发力站起，回到起始位置</li>
+                            <li>进阶：可手持哑铃或杠铃增加负重</li>
+                        </ol>
+                    </div>
+                    <!-- 力量训练2 -->
+                    <div class="exercise-item">
+                        <h4>2. 弓步蹲</h4>
+                        <div class="exercise-meta">组数：3组 | 次数：10-12次/腿 | 休息：60秒/组</div>
+                        <div class="exercise-content">锻炼单侧下肢力量，提升跑步时的平衡感和推进力</div>
+                        <ol class="exercise-steps">
+                            <li>双脚并拢站立，双手叉腰或持哑铃</li>
+                            <li>向前跨出一大步，下蹲至前后腿均呈90度，前膝不超过脚尖</li>
+                            <li>发力站起，收回后腿，换另一侧重复</li>
+                            <li>注意：身体保持正直，避免前倾或后仰</li>
+                        </ol>
+                    </div>
+                    <!-- 力量训练3 -->
+                    <div class="exercise-item">
+                        <h4>3. 臀桥</h4>
+                        <div class="exercise-meta">组数：4组 | 次数：15-20次/组 | 休息：45秒/组</div>
+                        <div class="exercise-content">强化臀部肌肉，改善跑步时的臀部发力，减少膝盖压力</div>
+                        <ol class="exercise-steps">
+                            <li>仰卧在地面，双腿弯曲，双脚平放，距离臀部约30cm</li>
+                            <li>发力收紧臀部，将臀部抬离地面，使身体呈一条直线（肩膀、臀部、膝盖）</li>
+                            <li>停留2秒后，缓慢放下，重复动作</li>
+                            <li>进阶：可在大腿上方放置杠铃片增加负重</li>
+                        </ol>
+                    </div>
+                    <!-- 力量训练4 -->
+                    <div class="exercise-item">
+                        <h4>4. 平板支撑</h4>
+                        <div class="exercise-meta">组数：3组 | 时间：60-90秒/组 | 休息：45秒/组</div>
+                        <div class="exercise-content">锻炼核心稳定性，避免跑步时身体左右晃动，减少能量浪费</div>
+                        <ol class="exercise-steps">
+                            <li>俯卧，用前臂和脚尖支撑身体，保持身体呈一条直线</li>
+                            <li>收紧核心、臀部和大腿肌肉，避免塌腰或翘臀</li>
+                            <li>保持均匀呼吸，坚持指定时间</li>
+                            <li>进阶：可尝试交替抬腿、抬手，增加训练难度</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 技术训练部分 -->
+            <div class="tech-training">
+                <div class="tech-header">
+                    <h3>跑步技术优化（每次跑步前10分钟专项练习）</h3>
+                    <p>规范的跑步技术能提升跑步经济性（相同配速下消耗更少能量），减少关节冲击，降低损伤风险</p>
+                </div>
+                <div class="tech-modules">
+                    <!-- 技术1：跑姿优化 -->
+                    <div class="tech-card">
+                        <h4>1. 跑姿核心原则</h4>
+                        <div class="tech-content">
+                            <p>高水平跑者的跑姿核心是“小步快频、身体前倾、脚掌中前部落地”：</p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li><strong>步频</strong>：理想步频170-180步/分钟，减少每步冲击力</li>
+                                <li><strong>身体姿态</strong>：微微前倾（从脚踝处前倾，而非腰部），保持放松</li>
+                                <li><strong>落地方式</strong>：脚掌中前部落地，落地位置在身体正下方，避免 heel strike（脚跟落地）</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tips">
+                            <strong>训练方法：</strong> 用节拍器APP设置170-180的节拍，跟着节拍跑步；每周1次“短步频跑”（30分钟，刻意加快步频，降低步幅），逐步形成肌肉记忆。
+                        </div>
+                    </div>
+                    <!-- 技术2：摆臂动作 -->
+                    <div class="tech-card">
+                        <h4>2. 摆臂动作规范</h4>
+                        <div class="tech-content">
+                            <p>摆臂是跑步的“平衡器”，正确的摆臂能提升跑步效率，避免身体扭转：</p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>手臂弯曲90度，自然贴在身体两侧</li>
+                                <li>摆臂方向：前后摆动（不超过胸部中线），避免左右晃动</li>
+                                <li>手部放松，握拳不要过紧，减少能量浪费</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tips">
+                            <strong>训练方法：</strong> 站立摆臂练习（10分钟/次），专注于前后摆臂的幅度和节奏；跑步时刻意提醒自己“收紧核心，规范摆臂”，逐步形成习惯。
+                        </div>
+                    </div>
+                    <!-- 技术3：呼吸节奏 -->
+                    <div class="tech-card">
+                        <h4>3. 呼吸节奏配合</h4>
+                        <div class="tech-content">
+                            <p>科学的呼吸节奏能提升氧气摄入效率，缓解跑步时的疲劳感：</p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>低强度跑步：采用鼻吸鼻呼或鼻吸口呼（2步一吸、2步一呼）</li>
+                                <li>中等强度跑步：口吸口呼（3步一吸、3步一呼）</li>
+                                <li>高强度跑步：口吸口呼（2步一吸、1步一呼或1步一吸、1步一呼）</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tips">
+                            <strong>训练方法：</strong> 轻松跑时刻意练习呼吸节奏，逐步形成肌肉记忆；避免憋气跑步，保持呼吸均匀、深长。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 高水平跑者指南 | <a href="../index.html">返回主页面</a> | <a href="training.html">返回精准训练体系</a> | <a href="strength.html">返回力量和技术训练</a></p>
+        </div>
+    </footer>
+</body>
+</html>
